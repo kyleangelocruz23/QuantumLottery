@@ -1,4 +1,4 @@
-<!-- myapp/templates/myapp/result.html -->
+<!-- home/templates/home/result.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,7 +23,8 @@
         <p>Selected numbers: {{ selected_numbers }}</p>
         <p>Generated Ticket ID: {{ ticket_id }}</p>
         <p>QR Code:</p>
-        <img src="{{ qr_code_path }}" alt="QR Code">
+        <img src="{{ qr_code_url }}" alt="QR Code">
     </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 </body>
 </html>
