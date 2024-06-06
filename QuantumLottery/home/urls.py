@@ -8,6 +8,8 @@ urlpatterns = [
     path('', views.index, name='index'),
     path('check-results/', views.check_results, name='check_results'),
     path('check-results/<str:ticket_id>/', views.check_results, name='check_results_ticket_id'),
+    path('generate-winning-numbers/', views.generate_winning_numbers, name='generate_winning_numbers'),
+    path('reset-lottery/', views.reset_lottery, name='reset_lottery'),
 ]
 
 if settings.DEBUG:
